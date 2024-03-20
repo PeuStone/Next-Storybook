@@ -21,7 +21,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/components/Button/Button.stories.mdx"  ],
   "exclude": [
     "node_modules"
   ]
