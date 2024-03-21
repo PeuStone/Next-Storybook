@@ -1,8 +1,19 @@
-export default function Button({ children, backgroundColor }) {
+import React from "react"
+
+interface ButtonProps {
+  children: React.ReactNode
+  disabled?: boolean
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
+}
+
+export default function Button({ children, ...props }: ButtonProps) {
   return (
-    <button style={{ backgroundColor }}>
+    <button {...props}>
       {children}
     </button>
   )
 }
 
+Button.defaultProps = {
+  disabled: false
+}
