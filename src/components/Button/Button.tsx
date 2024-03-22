@@ -12,10 +12,10 @@ const StyledButton = styled.button<ButtonProps> `
     return {
       backgroundColor: theme.colors[variant].main,
       color: theme.colors[variant].text,
-      ':hover': {
+      '&:hover': {
         backgroundColor: theme.colors[variant].light,
       },
-      ':focus': {
+      '&:focus': {
         backgroundColor: theme.colors[variant].dark,
       }
     };
