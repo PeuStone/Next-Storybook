@@ -23,6 +23,9 @@ const StyledButton = styled.button<ButtonProps> `
 `;
 
 interface ButtonProps {
+  /**
+   * Esse prop e baseada nas opções de cor que temos no nosso tema, confira a página do tema para mais infos
+   */
   variant?: 'primary'| 'accent';
   children: React.ReactNode
   disabled?: boolean
